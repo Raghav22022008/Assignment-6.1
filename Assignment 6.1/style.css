@@ -1,0 +1,206 @@
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f6fb;
+    color: #243047;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #253b80;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0;
+}
+
+main {
+    width: 90%;
+    max-width: 1050px;
+    margin: 35px auto;
+}
+
+/* Three cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.card {
+    flex: 1 1 250px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card-one {
+    box-sizing: content-box;
+    padding: 15px;
+    border: 2px solid #2878d0;
+    margin: 10px;
+}
+
+.card-two {
+    box-sizing: border-box;
+    padding: 30px;
+    border: 5px solid #21a179;
+    margin: 20px;
+}
+
+.card-three {
+    padding: 20px 35px;
+    border: 8px dashed #e58b2a;
+    margin: 30px 5px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #e9efff;
+    color: #253b80;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Box model diagram */
+.explanation {
+    margin-top: 55px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.explanation h2,
+.width-demo h2 {
+    text-align: center;
+}
+
+.box-model {
+    max-width: 520px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+.margin-layer {
+    background-color: #f6c96b;
+    padding: 25px;
+    border: 2px dashed #c58c20;
+}
+
+.border-layer {
+    background-color: #e98989;
+    padding: 22px;
+    border: 8px solid #c74646;
+}
+
+.padding-layer {
+    background-color: #9dd7b0;
+    padding: 22px;
+}
+
+.content-layer {
+    background-color: #8ec5f0;
+    border: 2px solid #3478b8;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.layer-label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.content-layer + .layer-label {
+    margin: 0;
+}
+
+.definitions {
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.definitions p {
+    padding: 10px;
+    margin: 8px 0;
+    background-color: #f3f6fb;
+    border-left: 4px solid #253b80;
+}
+
+/* Box sizing comparison */
+.width-demo {
+    margin-top: 35px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.demo-box {
+    width: 250px;
+    padding: 20px;
+    border: 5px solid;
+    margin: 25px auto;
+    overflow-wrap: anywhere;
+}
+
+.demo-box h3 {
+    margin-top: 0;
+}
+
+.content-demo {
+    box-sizing: content-box;
+    border-color: #2878d0;
+    background-color: #eaf3ff;
+}
+
+.border-demo {
+    box-sizing: border-box;
+    border-color: #21a179;
+    background-color: #e8fff5;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background-color: #253b80;
+    color: white;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    main {
+        width: 92%;
+    }
+
+    .card-one,
+    .card-two,
+    .card-three {
+        margin: 10px 0;
+    }
+
+    .box-model {
+        font-size: 12px;
+    }
+}

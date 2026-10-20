@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6.1 - Box Model Inspection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CSS Box Model Inspection</h1>
+        <p>Explore how content, padding, border, and margin affect elements.</p>
+    </header>
+
+    <main>
+        <section class="cards">
+            <article class="card card-one">
+                <h2>Card One</h2>
+                <p>This card uses content-box sizing. Padding and border increase its total width.</p>
+                <span class="tag">content-box</span>
+            </article>
+
+            <article class="card card-two">
+                <h2>Card Two</h2>
+                <p>This card uses border-box sizing. Padding and border are included in its width.</p>
+                <span class="tag">border-box</span>
+            </article>
+
+            <article class="card card-three">
+                <h2>Card Three</h2>
+                <p>This card has different padding, border thickness, and margin to demonstrate spacing.</p>
+                <span class="tag">Custom spacing</span>
+            </article>
+        </section>
+
+        <section class="explanation">
+            <h2>The Four Parts of the CSS Box Model</h2>
+
+            <div class="box-model">
+                <div class="margin-layer">
+                    <span class="layer-label">MARGIN</span>
+                    <div class="border-layer">
+                        <span class="layer-label">BORDER</span>
+                        <div class="padding-layer">
+                            <span class="layer-label">PADDING</span>
+                            <div class="content-layer">
+                                CONTENT
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="definitions">
+                <p><strong>Content:</strong> The text, image, or other material inside an element.</p>
+                <p><strong>Padding:</strong> The space between the content and the border.</p>
+                <p><strong>Border:</strong> The line surrounding the padding and content.</p>
+                <p><strong>Margin:</strong> The space outside the border, separating elements.</p>
+            </div>
+        </section>
+
+        <section class="width-demo">
+            <h2>Compare the Box-Sizing Properties</h2>
+            <p>Both examples have a declared width of 250px, padding of 20px, and a 5px border.</p>
+
+            <div class="demo-box content-demo">
+                <h3>content-box</h3>
+                <p>Total width = 250 + 40 + 10 = 300px</p>
+            </div>
+
+            <div class="demo-box border-demo">
+                <h3>border-box</h3>
+                <p>Total width = 250px</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Assignment 6.1 | CSS Box Model | HTML and CSS</p>
+    </footer>
+
+</body>
+</html>
